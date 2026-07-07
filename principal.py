@@ -275,7 +275,7 @@ def sidebar():
             tabla_productos(df_filtrado)
 
     # PRODUCTOS
-    elif selected == "Productos":
+    elif selected == "Fuentes":
         st.markdown(f"""<div class="page-title"><i class="bi bi-bag-fill"></i> Dashboard de {selected}</div>""", unsafe_allow_html=True)
         st.markdown("---")
         #st.info("🚧 Página en construcción")
@@ -304,7 +304,7 @@ def sidebar():
             graph_valor_inventario(df_productos, date1, date2, tipo_documento)
 
     # FUENTE
-    elif selected == "Fuente":
+    elif selected == "Productos":
         st.markdown(f"""<div class="page-title"><i class="bi bi-phone-fill"></i> Dashboard de {selected}</div>""", unsafe_allow_html=True)
         st.markdown("---")
 
